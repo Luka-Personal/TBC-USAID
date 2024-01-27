@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      property="og:image"
+      content="https://tbc-usaid-react.netlify.app/src/img/link-bg.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TBC" />
+    <meta property="og:description" content="Come Join TBC" />
+    <meta property="og:url" content="https://tbc-usaid-react.netlify.app" />
+    <title>TBC x USAID</title>
+    <script type="module" defer src="/src/js/controller.js"></script>
+    <link
+      rel="icon"
+      sizes="16x16 192x192"
+      href="/src/img/favicon.png"
+      type="image/png" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/queries.css" />
+  </head>
+  <body>
+    <header class="header-nav" id="headerNav"></header>
+    <main>
+      <section class="hero">
+        <div class="center section-hero">
+          <h1 class="main-heading">
+            TBC x USAID <br />
+            <span>ᲢᲔᲥᲜᲝᲚᲝᲒᲘᲣᲠᲘ ᲒᲐᲜᲐᲗᲚᲔᲑᲘᲡᲗᲕᲘᲡ</span>
+          </h1>
+        </div>
+      </section>
+      <section class="program-overview" id="programOverviewSection"></section>
+      <section class="course-cards">
+        <div class="center section-courses">
+          <h2 class="secondary-heading">სასწავლო კურსები</h2>
+          <div class="courses-box grid" id="courseCardsSection"></div>
+        </div>
+      </section>
+      <section class="carousel" id="carouselSection">
+        <div class="center section-carousel">
+          <h2 class="secondary-heading">პროექტის პარტნიორები</h2>
+          <div class="slider-wrapper">
+            <div>
+              <ul class="slider-content" id="sliderContent"></ul>
+              <div
+                class="next-previous__navigation"
+                id="nextPreviousNavigation">
+                <button
+                  type="button"
+                  class="slide-button previous-slide__button"
+                  aria-label="Previous Slide"
+                  id="previousSlide"
+                  data-action="goLeft">
+                  <img
+                    src="/src/img/svg-images/arrow-carousel-left.svg"
+                    alt=""
+                    class="slide-arrow previous-slide__arrow" />
+                </button>
+                <button
+                  type="button"
+                  class="slide-button next-slide__button"
+                  id="nextSlide"
+                  aria-label="Next Slide"
+                  data-action="goRight">
+                  <img
+                    src="/src/img/svg-images/arrow-carousel-right.svg"
+                    alt="Next Slide"
+                    class="slide-arrow next-slide__arrow" />
+                </button>
+              </div>
+            </div>
+            <ul class="dot-navigation" id="dotNavigation"></ul>
+          </div>
+        </div>
+      </section>
+      <section class="accordion">
+        <div class="center section-accordion">
+          <h2 class="secondary-heading accordion-question-title">
+            ხშირად დასმული კითხვები
+            <a class="accordion-questions__a" href="#">ყველა კითხვა</a>
+          </h2>
+          <div id="accordionOpenData" class="accordions"></div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="center section-footer grid">
+          <img
+            class="tbc-logo"
+            src="/src/img/footer-images/tbc-logo.webp"
+            alt="" />
+          <div class="social-logos">
+            <a target="_blank" href="https://www.facebook.com/tbcbank/">
+              <img src="/src/img/footer-images/fb-logo.webp" alt="fb-logo" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.youtube.com/channel/UCGk9R2LV2ywOL80r8Xc6xtQ"
+              ><img src="/src/img/footer-images/yt-logo.webp" alt="yt-logo"
+            /></a>
+          </div>
+          <div class="copyright-notice">
+            <p class="footer-p">© 2023 ყველა უფლება დაცულია</p>
+          </div>
+          <p class="footer-p legal-text">წესები და პირობები</p>
+          <button type="button" class="message-button">მოგვწერეთ</button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

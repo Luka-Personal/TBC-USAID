@@ -1,0 +1,491 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 1 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: rgb(27, 30, 31);
+  font-size: 62.5%;
+}
+:root {
+  --main-text-color: rgb(244, 244, 244);
+  --main-background-color-dark: rgb(22, 22, 22);
+  --main-background-color-light: rgb(43, 43, 43);
+  --main-button-link-color: rgb(78, 171, 237);
+}
+body {
+  font-family: "Arial", "Helvetica Neue", sans-serif;
+}
+.grid {
+  display: -ms-grid;
+  display: grid;
+}
+/* ========================= */
+/* Text Configs START */
+/* ========================= */
+.main-heading {
+  color: var(--main-text-color);
+  line-height: 1.6;
+  font-size: 4.2rem;
+}
+.main-header > span {
+  font-size: 3.4rem;
+}
+.secondary-heading {
+  color: rgb(219, 219, 219);
+  font-size: 24px;
+  margin-bottom: 6.7rem;
+  font-weight: 400;
+}
+/* ========================= */
+/* Text Configs END */
+/* ========================= */
+
+/* ========================= */
+/* Header Section Styles START */
+/* ========================= */
+header {
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  left: 0;
+  top: 0;
+  padding: 2.4rem 6rem;
+  background-color: rgb(27, 30, 31);
+  transition: all 0.3s ease;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 98rem;
+  width: 100%;
+}
+.nav-open {
+  display: none;
+  margin-top: 2.4rem;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+nav ul li:first-child {
+  margin-left: 0;
+}
+.nav-link {
+  display: inline-block;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: rgb(0, 163, 224);
+}
+.active-link {
+  color: rgb(0, 163, 224);
+}
+.hidden-mobile__nav {
+  display: none;
+  visibility: hidden;
+}
+.body-nav__state {
+  overflow: hidden;
+}
+/* ========================= */
+/* Header Section Styles END */
+/* ========================= */
+
+/* ========================= */
+/* Page&Section(Div) Container Styles START */
+/* ========================= */
+main {
+  margin-top: 8.4rem;
+}
+.center {
+  max-width: 110rem;
+  margin: 0 auto;
+}
+.section-hero {
+  padding: 11rem 6rem;
+}
+.section-courses,
+.section-program,
+.section-carousel {
+  padding: 4rem 6rem;
+}
+.section-accordion {
+  padding: 9rem 10rem;
+  position: relative;
+}
+.section-footer {
+  grid-template-rows: repeat(2, min-content) 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+/* ========================= */
+/* Page&Section(Div) Container Styles END */
+/* ========================= */
+
+/* ========================= */
+/* Hero Section Styles START */
+/* ========================= */
+.hero {
+  background: #fff url("../img/backgroundImageTBC.webp") no-repeat center;
+  background-size: cover;
+}
+/* ========================= */
+/* Hero Section Styles END */
+/* ========================= */
+
+/* ========================= */
+/* Program Overview Styles START */
+/* ========================= */
+.program-overview {
+  background-color: var(--main-background-color-light);
+}
+.program-overview__p {
+  font-size: 2.8rem;
+  color: var(--main-text-color);
+  line-height: 1.7;
+  margin-bottom: 5rem;
+}
+.program-overview__a {
+  text-decoration: none;
+  color: var(--main-button-link-color);
+  font-size: 2rem;
+  font-weight: bold;
+  transition: color 0.4s ease;
+}
+.program-overview__a:hover,
+.program-overview__a:active {
+  color: rgb(170, 170, 170);
+}
+/* ========================= */
+/* Program Overview Styles END */
+/* ========================= */
+
+/* ========================= */
+/* Course Cards Styles START */
+/* ========================= */
+.course-cards {
+  background-color: var(--main-background-color-dark);
+}
+.courses-box {
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 4rem;
+}
+.course-image {
+  width: 100%;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+.course {
+  border: 1px solid rgb(85, 85, 85);
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+.course-info {
+  padding: 3rem 2rem;
+  color: var(--main-text-color);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.course-title {
+  font-size: 1.8rem;
+  padding-bottom: 2.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+.course-status {
+  font-size: 1.4rem;
+}
+.course-details {
+  padding: 4rem 2rem;
+  font-size: 1.8rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: var(--main-button-link-color);
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 5rem;
+  gap: 1rem;
+}
+.course-details:hover {
+  color: rgb(53, 118, 161);
+}
+/* ========================= */
+/* Course Cards Styles END */
+/* ========================= */
+
+/* ========================= */
+/* Carousel Section Styles START */
+/* ========================= */
+.carousel {
+  background-color: var(--main-background-color-light);
+}
+.slider-wrapper div:first-child {
+  position: relative;
+}
+.slider-content {
+  list-style: none;
+  position: relative;
+}
+.slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 1.5s ease;
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+  height: 15rem;
+}
+.slide-item img {
+  width: 100%;
+  max-width: 25rem;
+  margin: auto;
+}
+.slide-item.active {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+.dot-navigation {
+  list-style: none;
+  text-align: center;
+}
+.dot-navigation li {
+  width: 7px;
+  height: 7px;
+  margin: 7px;
+  background-color: rgba(0, 0, 0, 0);
+  display: inline-block;
+  border-radius: 7.5rem;
+  border: 2px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.dot-navigation li.active {
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+.next-previous__navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  min-width: 75rem;
+  width: 120%;
+  max-width: calc(100vw - 10px);
+}
+.slide-button {
+  cursor: pointer;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.slide-button:hover .slide-arrow {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+.slide-arrow {
+  width: 3.2rem;
+  height: 3.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* ========================= */
+/* Carousel Section Styles END */
+/* ========================= */
+
+/* ========================= */
+/* Accordion Section Styles START */
+/* ========================= */
+.accordion {
+  background-color: var(--main-background-color-dark);
+}
+.secondary-heading.accordion-question-title {
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-questions__a {
+  color: var(--main-button-link-color);
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+.accordion-questions__a:hover,
+.accordion-questions__a:active {
+  color: rgb(170, 170, 170);
+}
+.accordion-item {
+  border-bottom: 1px solid rgb(53, 49, 49);
+}
+.accordion-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion-button:hover,
+.accordion-button:focus {
+  cursor: pointer;
+}
+.accordion-title {
+  padding: 3rem 0;
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+}
+.accordion-icon {
+  width: 24px;
+  height: 24px;
+  background: url("../img/svg-images/arrow-accordion-down.svg");
+}
+.accordion-button[aria-expanded="true"] .accordion-icon {
+  background: url("../img/svg-images/arrow-accordion-up.svg") no-repeat center
+    center;
+}
+.accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion-button[aria-expanded="true"] + .accordion-content {
+  opacity: 1;
+  max-height: 18rem;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.button-0[aria-expanded="true"] + .accordion-content {
+  max-height: 100rem;
+}
+.accordion-intro,
+.accordion-stages,
+.accordion-answer {
+  font-weight: 300;
+  color: var(--main-text-color);
+  font-size: 1.4rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+  padding: 0 0.5rem;
+}
+.accordion-intro {
+  margin-bottom: 2rem;
+}
+.accordion-answer {
+  margin-top: 1rem;
+}
+.accordion-stages {
+  padding: 0 1.5rem;
+  margin-bottom: 0.5rem;
+}
+/* ========================= */
+/* Accordion Section Styles END */
+/* ========================= */
+
+/* ========================= */
+/* Footer Section Styles START */
+/* ========================= */
+.section-footer {
+  padding: 0 6rem;
+}
+.footer {
+  background-color: rgb(27, 30, 31);
+}
+.footer-p {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+.copyright-notice {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+.tbc-logo {
+  max-width: 10.6rem;
+  padding: 6.4rem 0 2.7rem 0;
+}
+.social-logos {
+  width: 20rem;
+  padding: 6.4rem 0 2.7rem 0;
+  width: 100%;
+}
+.social-logos {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/ 3;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+.social-logos img {
+  max-width: 3.9rem;
+}
+.message-button {
+  justify-self: flex-end;
+  margin: 1.5rem 0 4.3rem 0;
+  background-color: rgb(78, 171, 237);
+  color: var(--main-text-color);
+  border: none;
+  border-radius: 0.6rem;
+  padding: 1rem 3.5rem;
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 16.2rem;
+}
+.message-button:hover {
+  color: rgb(52, 49, 49);
+  background-color: rgb(213, 213, 213);
+}
+.legal-text {
+  margin: 1.5rem 0 4.3rem 0;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+/* ========================= */
+/* Footer Section Styles END */
+/* ========================= */
