@@ -17,7 +17,7 @@ class CoursesView extends View {
          <h3 class="course-title">${courseData.title}</h3>
          <p class="course-status">${courseData.status}</p>
         </div>
-        <a class="course-details" href="#"><img src="/src/img/svg-images/arrow-course-details.svg" alt="">კურსის დეტალები</a>
+        <a class="course-details" href="${courseData.courseLink}"><img src="/src/img/svg-images/arrow-course-details.svg" alt="course-arrow">კურსის დეტალები</a>
        </div>`;
       })
       .join("")}`;

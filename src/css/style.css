@@ -259,6 +259,7 @@ main {
   gap: 5rem;
   flex-wrap: wrap;
   height: 15rem;
+  /* transform: translateX(-100%); */
 }
 .slide-item img {
   width: 100%;
@@ -270,10 +271,12 @@ main {
   z-index: 1;
   opacity: 1;
   visibility: visible;
+  /* transform: translateX(0); */
 }
 .dot-navigation {
   list-style: none;
   text-align: center;
+  padding-top: 5rem;
 }
 .dot-navigation li {
   width: 7px;
@@ -466,7 +469,7 @@ main {
 .message-button {
   justify-self: flex-end;
   margin: 1.5rem 0 4.3rem 0;
-  background-color: rgb(78, 171, 237);
+  background-color: rgb(2, 100, 170);
   color: var(--main-text-color);
   border: none;
   border-radius: 0.6rem;
@@ -479,7 +482,7 @@ main {
 }
 .message-button:hover {
   color: rgb(52, 49, 49);
-  background-color: rgb(213, 213, 213);
+  background-color: rgb(255, 255, 255);
 }
 .legal-text {
   margin: 1.5rem 0 4.3rem 0;

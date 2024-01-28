@@ -13,7 +13,7 @@ class HeaderView extends View {
     const markup = `
     <nav>
     <input type="checkbox" id="nav" class="hidden-mobile__nav" />
-    <label for="nav" class="nav-open" aria-controls="navigation">
+    <label for="nav" class="nav-open">
       <i class="outer-line"></i>
       <i class="middle-line"></i>
       <i class="outer-line right-line"></i>

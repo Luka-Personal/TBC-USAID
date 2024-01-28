@@ -15,54 +15,64 @@ function generateCoursesData() {
       photoURL: "src/img/course-images/iosDevelopment.webp",
       title: "iOS Development",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/ios-development",
     },
 
     {
       photoURL: "/src/img/course-images/react.webp",
       title: "React",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/react",
     },
 
     {
       photoURL: "/src/img/course-images/introToPython.webp",
       title: "Intro to Python",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/python-basic",
     },
 
     {
       photoURL: "/src/img/course-images/advancedPython.webp",
       title: "Advanced Python",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/python-advance",
     },
 
     {
       photoURL: "/src/img/course-images/advancedCybersecurity.webp",
       title: "Advanced Cybersecurity Course",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink:
+        "https://www.tbcacademy.ge/usaid/information-security-advance",
     },
 
     {
       photoURL: "/src/img/course-images/tot.webp",
       title: "ToT - Training of Trainers",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/training-of-trainers",
     },
 
     {
       photoURL: "/src/img/course-images/blockchain.webp",
       title: "Blockchain",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/blockchain",
     },
 
     {
       photoURL: "/src/img/course-images/devops.webp",
       title: "DevOps",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/devops",
     },
 
     {
       photoURL: "/src/img/course-images/informationSecurity.webp",
       title: "Information Security Governance",
       status: "რეგისტრაცია დასრულებულია",
+      courseLink: "https://www.tbcacademy.ge/usaid/information-security-basic",
     },
   ];
   courseData.forEach((courseData) => {
