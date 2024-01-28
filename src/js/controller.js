@@ -4,6 +4,7 @@ import programView from "./views/programView.js";
 import coursesView from "./views/coursesView.js";
 import carouselView from "./views/carouselView.js";
 import accordionView from "./views/accordionView.js";
+import footerView from "./views/footerView.js";
 const controlHeader = function () {
   headerView.render();
   headerView.addEventListeners();
@@ -22,11 +23,16 @@ const controlAccordion = function () {
   accordionView.render(model.state.accordionDatabase);
   accordionView.initializeAccordion();
 };
+const controlFooter = function () {
+  footerView.render(model.state.lawsData);
+  footerView.addEventListeners();
+};
 const init = function () {
   controlHeader();
   controlProgramOverview();
   controlCourses();
   controlSlider();
   controlAccordion();
+  controlFooter();
 };
 (() => init())();
