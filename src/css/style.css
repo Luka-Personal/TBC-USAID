@@ -524,7 +524,7 @@ main {
 article {
   display: none;
   max-width: 50%;
-  color: #fff;
+  color: rgb(140, 140, 140);
   font-size: 1.4rem;
 }
 #legal:checked ~ .overlay-laws {
