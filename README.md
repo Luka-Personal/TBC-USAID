@@ -118,6 +118,7 @@ To effortlessly launch and preview this project, follow the simple steps below:
 │   │   ├───course-images
 │   │   ├───footer-images
 │   │   ├───header-images
+│   │   ├───laws-images
 │   │   ├───partners-images
 │   │   └───svg-images
 │   └───js
@@ -128,6 +129,7 @@ To effortlessly launch and preview this project, follow the simple steps below:
 │           ├───accordionView.js
 │           ├───carouselView.js
 │           ├───coursesView.js
+│           ├───footerView.js
 │           ├───headerView.js
 │           ├───programView.js
 │           └───View.js
@@ -138,7 +140,7 @@ To effortlessly launch and preview this project, follow the simple steps below:
 
 The project follows a structured organization to maintain clarity and modularity:
 
-- **img/:/:** Contains images, icons, SVGs
+- **img/:** Contains images, icons, SVGs
 - **views/:** Contains respective JavaScript view files for each part of the website, representing the primary code responsible for directly displaying content on the screen. This includes modular components such as cards, sliders, and accordions.
 - **model.js** JavaScript file that stores essential mock data for carousel, accordion, and other components within the main application. This centralized location simplifies data management, aiding in testing and development for these specific features.
 - **controller.js** JavaScript file that, following the MVC architecture, serves as the intermediary that connects the "model.js" to the respective view files. In this structure, the controller facilitates communication between the data and the presentation layer, ensuring a seamless interaction between the application's logic and its visual representation.
