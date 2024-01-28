@@ -230,7 +230,7 @@
   }
   .copyright-notice {
     grid-row: 4/ 5;
-    padding-bottom: 7rem;
+    padding-bottom: 1rem;
   }
   .legal-text {
     grid-column: 1/ 3;
